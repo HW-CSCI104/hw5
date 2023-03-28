@@ -38,4 +38,11 @@ bool schedule(
     DailySchedule& sched
 );
 
+bool recurse(
+    const AvailabilityMatrix& avail,
+    const size_t dailyNeed,
+    const size_t maxShifts,
+    DailySchedule& sched, const size_t pos, std::vector<size_t>& filled, std::vector<bool> occupied
+);
+
 #endif

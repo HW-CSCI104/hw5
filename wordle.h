@@ -6,6 +6,9 @@
 #include <string>
 #endif
 
+#include <set>
+#include <string>
+
 /**
  * @brief Returns the list of all legal words in the provided dictionary
  *        that meet the criteria provided in the `in` and `floating`
@@ -21,5 +24,10 @@ std::set<std::string> wordle(
     const std::string& in,
     const std::string& floating,
     const std::set<std::string>& dict);
+
+void recurse(
+    const std::string& in,
+    const std::string& floating,
+    const std::set<std::string>& dict, std::set<std::string>& answers);
 
 #endif
