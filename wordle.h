@@ -19,9 +19,9 @@
  * @return std::set<std::string> - Set of all words that meet the criteria
  */
 
-size_t countNumEmpty(std::string s, size_t pos);
+size_t countNumEmpty(std::string& s, size_t pos);
 
-void checkChar(std::string word, std::string floating, const std::set<std::string>& dict, std::set<std::string>& answers, size_t pos, size_t empty, char c);
+void checkChar(std::string& word, std::string& floating, const std::set<std::string>& dict, std::set<std::string>& answers, size_t pos, size_t empty, char c);
 
 std::set<std::string> wordle(
     const std::string& in,
@@ -29,8 +29,8 @@ std::set<std::string> wordle(
     const std::set<std::string>& dict);
 
 void recurse(
-    const std::string& in,
-    const std::string& floating,
+     std::string& in,
+     std::string& floating,
     const std::set<std::string>& dict, std::set<std::string>& answers, size_t pos, size_t empty);
 
 #endif
