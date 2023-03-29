@@ -6,8 +6,6 @@
 #include <string>
 #endif
 
-#include <set>
-#include <string>
 
 /**
  * @brief Returns the list of all legal words in the provided dictionary
